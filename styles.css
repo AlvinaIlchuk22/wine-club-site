@@ -359,3 +359,10 @@ details p{color:var(--mute);margin-top:12px;max-width:62ch}
   .wines-head{gap:18px}
   .wines-head .btn{font-size:.66rem;padding:12px 20px;letter-spacing:.16em}
 }
+.heart svg{width:22px;height:22px;stroke-linejoin:round}
+/* product card buy row: keep the heart square */
+.pc-buy{gap:8px;flex-wrap:nowrap}
+.pc-buy .qty{flex:0 1 auto;gap:2px;padding:5px 6px}
+.pc-buy .qty button{width:28px;height:30px}
+.pc-buy .qty output{min-width:24px}
+.heart{flex:0 0 46px;width:46px;height:46px;min-width:46px;aspect-ratio:1}
