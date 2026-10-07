@@ -9,7 +9,7 @@ A portfolio concept for a (fictional) Barossa Valley winery, built to show a hom
 |---|---|
 | `index.html` | Homepage: wine carousel hero, wine cards, story, counters, cellar door |
 | `club.html` | "The Cellar Circle" wine club landing page: tiers, how it works, FAQ, join form |
-| `edm.html` | HTML email (600px, table layout, inline styles) |
+| `email.html` | HTML email (600px, table layout, inline styles) |
 | `privacy.html`, `unsubscribe.html` | Supporting pages the email links to |
 
 ## Stack
@@ -19,7 +19,7 @@ Fonts: Cormorant Garamond and Jost (same on every page and in the email, with Ge
 ## Run locally
 ```bash
 python3 serve.py      # no-cache dev server
-# open http://localhost:8783/index.html
+# open http://localhost:8783/
 ```
 
 ## Notes

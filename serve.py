@@ -8,6 +8,11 @@ class H(http.server.SimpleHTTPRequestHandler):
         self.send_header('Cache-Control', 'no-store, must-revalidate')
         self.send_header('Accept-Ranges', 'bytes')
         super().end_headers()
+    def translate_path(self, path):
+        p = super().translate_path(path)
+        if not os.path.exists(p) and os.path.exists(p + '.html'):
+            return p + '.html'   # clean URLs: /club -> club.html
+        return p
     def send_head(self):
         rng = self.headers.get('Range')
         path = self.translate_path(self.path)
